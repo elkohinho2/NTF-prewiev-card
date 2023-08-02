@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    height: 100%;
+    line-height: 1.7;
+}
+
+.product img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+:root {
+/* primary */
+--soft-blue: hsla(215, 30%, 67%, 0.831);
+--cyan: hsl(178, 100%, 50%);
+/* neutral */
+--very-dark-blue-main-bg: hsl(217, 54%, 11%);           /* (main BG) */
+--very-dark-blue-card-bg: hsl(216, 50%, 16%);             /* (card BG) */
+--very-dark-blue: hsl(215, 32%, 27%);      /* (line) */  
+--white: hsl(0, 0%, 100%);
+/* fonts */
+--ff: 'Outfit', sans-serif;
+/* font-weights */
+--fw-300: 300;
+--fw-400: 400;
+--fw-600: 600;
+}
+
+body {
+    background-color: var(--very-dark-blue-main-bg);
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+.product {
+    background-color: var(--very-dark-blue-card-bg);
+    display: grid;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    max-width: 375px;
+}
+
+.content {
+    display: grid;
+    gap: 1rem;
+}
+
+.heading {
+    color: var(--white);
+    font-family: var(--ff);
+    font-weight: var(--fw-600);
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.content p {
+    color: var(--soft-blue);
+    font-family: var(--ff);
+    font-size: 1rem;
+}
+
+.hor-line:after {
+    content: "";
+    display: block;
+    max-width: 100%;
+    border-bottom: 1px solid var(--very-dark-blue);
+    margin-top: 1rem;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--very-dark-blue);
+}
+
+.ether-numb img {
+    display: inline-block;
+}
+
+.ether-numb p {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: var(--cyan);
+    font-weight: var(--fw-600);
+    position: relative;
+    top: -3px;
+}
+
+.time-period img {
+    display: inline-block;
+}
+.time-period p {
+    margin-left: 0.5rem;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+.bottom-text {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-text img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 35px;
+}
+
+.bottom-text p {
+    margin-left: 1rem;
+}
+
+.name {
+    color: var(--white);
+    font-weight: var(--fw-300);
+}
+
+
+
+
+
